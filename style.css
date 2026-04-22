@@ -1,0 +1,867 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dcd7d1;
+}
+
+/* Hero секция */
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('1.png');
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #dcd7d1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.wedding-title {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: normal;
+    color: #6a633a;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+}
+
+.hero-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: none;
+    aspect-ratio: 11 / 16;
+    object-fit: cover;
+}
+
+/* Секция SAVE THE DATE */
+.save-date {
+    background-color: #dcd7d1;
+    padding: 0 20px 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.save-date-content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.save-date-title {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 64px;
+    font-weight: 300;
+    letter-spacing: 6px;
+    color: #6a633a;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.save-date-date {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: normal;
+    color: #6a633a;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.save-date-image {
+    width: 60%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Следующая секция */
+.next-section {
+    background-color: #dcd7d1;
+    padding: 60px 20px;
+    text-align: center;
+    color: #6a633a;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+    .save-date-title {
+        font-size: 48px;
+        letter-spacing: 4px;
+        font-weight: 300;
+    }
+    
+    .save-date-date {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+    
+    .save-date-image {
+        width: 70%;
+        max-width: 300px;
+    }
+}
+
+/* Адаптация для мобильных телефонов */
+@media (max-width: 480px) {
+    .wedding-title {
+        font-size: 36px;
+        top: 30px;
+    }
+    
+    .hero-content {
+        max-width: 280px;
+    }
+    
+    .save-date-title {
+        font-size: 36px;
+        letter-spacing: 3px;
+        font-weight: 300;
+    }
+    
+    .save-date-date {
+        font-size: 32px;
+    }
+    
+    .save-date-image {
+        width: 80%;
+        max-width: 280px;
+    }
+    
+    .save-date {
+        padding: 0 15px 60px 15px;
+    }
+}
+
+/* Секция LOCATION */
+.location {
+    background-color: transparent;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-content {
+    background-color: #6a633a;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 20px;
+}
+
+.location-title {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    /* text-transform: uppercase; */
+}
+
+.location-text {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 22px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.location-map {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.location-map iframe {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 400px;
+}
+
+.banquet {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .location-title {
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+    
+    .location-text {
+        font-size: 20px;
+    }
+    
+    .location-content {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .location-title {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    
+    .location-text {
+        font-size: 18px;
+    }
+    
+    .location {
+        padding: 40px 15px;
+    }
+    
+    .location-content {
+        padding: 30px 15px;
+        border-radius: 0px;
+    }
+    
+    .location-map iframe {
+        height: 300px;
+    }
+}
+
+
+/* Секция TIMING */
+.timing {
+    background-color: #dcd7d1;
+    background-image: url('timing.png');
+    background-size: cover;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timing-content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.timing-title {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: #6a633a;
+    margin-bottom: 50px;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+.timing-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timing-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.timing-item.left {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.timing-item.right {
+    align-items: flex-end;
+    text-align: right;
+}
+
+/* Опускаем первые 2 элемента */
+.timing-item:first-child,
+.timing-item:nth-child(2) {
+    margin-bottom: 60px;
+}
+
+.timing-time {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #6a633a;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.timing-name {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 28px;
+    font-weight: normal;
+    color: #6a633a;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.timing-sub {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 22px;
+    font-style: italic;
+    color: #6a633a;
+    opacity: 0.7;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .timing-title {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+    
+    .timing-time {
+        font-size: 52px;
+    }
+    
+    .timing-name {
+        font-size: 24px;
+    }
+    
+    .timing-sub {
+        font-size: 18px;
+    }
+    
+    .timing-item:first-child,
+    .timing-item:nth-child(2) {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .timing-title {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+    
+    .timing-time {
+        font-size: 44px;
+    }
+    
+    .timing-name {
+        font-size: 20px;
+    }
+    
+    .timing-sub {
+        font-size: 16px;
+    }
+    
+    .timing-items {
+        gap: 30px;
+    }
+    
+    .timing {
+        padding: 40px 15px;
+    }
+    
+.timing-item:first-child,
+.timing-item:nth-child(2) {
+    margin-top: 80px;
+}
+}
+
+.item-1 {
+    position: relative !important;
+    top: -80px !important;
+    left: 70px !important;
+}
+
+.item-2 {
+    position: relative !important;
+    top: -40px !important;
+    left: -70px !important;
+}
+
+.item-3 {
+    position: relative !important;
+    top: -90px !important;
+    left: 40px !important;
+}
+
+.item-4 {
+    position: relative !important;
+    top: 0px !important;
+    left: 70px !important;
+}
+
+
+/* Секция DRESS CODE */
+.dress-code {
+    background-color: #dcd7d1;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dress-code-content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dress-code-title {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: #6a633a;
+    margin-bottom: 30px;
+    /* text-transform: uppercase; */
+}
+
+.dress-code-text {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 20px;
+    color: #6a633a;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.dress-code-image {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .dress-code-title {
+        font-size: 38px;
+        margin-bottom: 25px;
+    }
+    
+    .dress-code-text {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+    
+    .dress-code-image {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dress-code-title {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .dress-code-text {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    
+    .dress-code {
+        padding: 40px 15px;
+    }
+    
+    .dress-code-image {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Секция DETAILS */
+.details {
+    background-color: #dcd7d1;
+    padding: 60px 20px 120px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+}
+
+.details::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    width: 200px;
+    height: 200px;
+    background-image: url('3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.details::after {
+    content: '';
+    position: absolute;
+    right: 2px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    background-image: url('4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.details-content {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.details-title {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: #6a633a;
+    margin-bottom: 40px;
+    /* text-transform: uppercase; */
+}
+
+.details-text {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 24px;
+    color: #6a633a;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.details-text:last-child {
+    margin-bottom: 0;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+    .details {
+        padding: 60px 20px 100px 20px;
+    }
+    
+    .details::before {
+        width: 150px;
+        height: 150px;
+        bottom: -60px;
+    }
+    
+    .details::after {
+        width: 250px;
+        height: 250px;
+        top: 40%;
+    }
+    
+    .details-content {
+        max-width: 450px;
+    }
+    
+    .details-title {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    
+    .details-text {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 480px) {
+    .details {
+        padding: 40px 15px 80px 15px;
+    }
+    
+    .details::before {
+        width: 120px;
+        height: 120px;
+        bottom: -40px;
+    }
+    
+    .details::after {
+        width: 200px;
+        height: 200px;
+        top: 40%;
+    }
+    
+    .details-content {
+        max-width: 280px;
+    }
+    
+    .details-title {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+    
+    .details-text {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+}
+
+/* Секция RSVP */
+.rsvp {
+    background-color: #dcd7d1;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rsvp-content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.rsvp-title {
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
+    font-size: 48px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: #6a633a;
+    margin-bottom: 40px;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6a633a;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+/* Поля ввода - одна линия */
+.form-group input,
+.form-group textarea {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 18px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid #6a633a;
+    background-color: transparent;
+    color: #2c2a24;
+    outline: none;
+    transition: all 0.3s ease;
+    border-radius: 0;
+    text-align: center;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #8a8350;
+    border-bottom-width: 2px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #b0aa9a;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: auto;
+    height: auto;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+    align-items: flex-start;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 18px;
+    color: #6a633a;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #6a633a;
+}
+
+.submit-btn {
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #6a633a;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #8a8350;
+    transform: translateY(-2px);
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .rsvp-title {
+        font-size: 42px;
+        margin-bottom: 35px;
+    }
+    
+    .form-group label {
+        font-size: 18px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 18px;
+    }
+    
+    .checkbox-label {
+        font-size: 18px;
+    }
+    
+    .submit-btn {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rsvp-title {
+        font-size: 38px;
+        margin-bottom: 30px;
+    }
+    
+    .rsvp {
+        padding: 40px 15px;
+    }
+    
+    .form-group label {
+        font-size: 18px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 18px;
+        padding: 6px 0;
+    }
+    
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        font-size: 14px;
+    }
+    
+    .checkbox-group {
+        gap: 12px;
+    }
+    
+    .checkbox-label {
+        font-size: 16px;
+        gap: 10px;
+    }
+    
+    .submit-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* Футер */
+.footer {
+    background-color: #dcd7d1;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px;
+    }
+}

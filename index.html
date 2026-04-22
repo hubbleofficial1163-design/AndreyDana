@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Свадебное приглашение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="wedding-title">We are getting <br> married!</h1>
+            <div class="hero-photo-wrapper">
+                <img src="hero1.jpg" alt="Фото молодоженов" class="hero-photo">
+            </div>
+        </div>
+    </section>
+
+    <section class="save-date">
+        <div class="save-date-content">
+            <h2 class="save-date-title">SAVE THE DATE</h2>
+            <div class="save-date-date">11/07/2026</div>
+            <img src="22.png" alt="Decorative" class="save-date-image">
+        </div>
+    </section>
+
+    <section class="location">
+        <div class="location-content">
+            <h2 class="location-title">Location</h2>
+            <p class="location-text">Роспись: Отдел ЗАГС по городскому округу Ступино, Проспект Победы, 26</p> 
+            <p class="location-text banquet">Банкет: Московская область, городской округ Ступино, База отдыха «Заимка»</p>
+            <div class="location-map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adf50f15b90623f71d8cf693773a964ed58a4bb28293ec1222699cf0a98282403&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            </div>
+            <!-- <p class="location-text banquet">Банкет: Московская область, городской округ Ступино, База отдыха «Заимка»</p> -->
+        </div>
+    </section>
+
+    <section class="timing">
+        <div class="timing-items">
+            <h2 class="timing-title">Timing</h2>
+            <div class="timing-item right item-1">
+                <div class="timing-time">13:40</div>
+                <div class="timing-name">Сбор гостей</div>
+                <div class="timing-sub">встречаем близких</div>
+            </div>
+            <div class="timing-item left item-2">
+                <div class="timing-time">14:00</div>
+                <div class="timing-name">Торжественная <br> регистрация</div>
+                <div class="timing-sub">волнительный <br> момент</div>
+            </div>
+            <div class="timing-item right item-3">
+                <div class="timing-time">16:30</div>
+                <div class="timing-name">Фуршет</div>
+                <div class="timing-sub">легкие закуски</div>
+            </div>
+            <div class="timing-item right item-4">
+                <div class="timing-time">17:00</div>
+                <div class="timing-name">Банкет</div>
+                <div class="timing-sub">праздничный ужин</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dress-code">
+        <div class="dress-code-content">
+            <h2 class="dress-code-title">Dress code</h2>
+            <p class="dress-code-text">
+                Дорогие гости! <br>
+                Мы будем очень рады, если Вы поддержите <br>
+                цветовую гамму нашего торжества:
+            </p>
+            <img src="dress.png" alt="Dress code colors" class="dress-code-image">
+        </div>
+    </section>
+
+    <section class="details">
+        <div class="details-content">
+            <h2 class="details-title">Details</h2>
+            <p class="details-text">
+                Самым главным подарком для нас будет ваше хорошее настроение на нашей свадьбе. 
+                А чтобы руки были свободны для крепких объятий, будем рады легким подаркам в конвертах.
+            </p>
+            <p class="details-text">
+                Также просим, пожалуйста, не обременяйте себя покупкой красивого букета, 
+                вы можете вовсе прийти без цветов.
+            </p>
+            <p class="details-text">
+                На нашем празднике будет все: смех, слезы счастья, танцы, песни, тосты… 
+                Но наша любовь достаточно сладкая, поэтому просим вас обойтись без «Горько»!
+            </p>
+        </div>
+    </section>
+
+    <section class="rsvp">
+        <div class="rsvp-content">
+            <h2 class="rsvp-title">Guest form</h2>
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <!-- <label for="name">ФИО</label> -->
+                    <input type="text" id="name" name="name" required placeholder="Ваше полное имя">
+                </div>
+                
+                <div class="form-group">
+                    <!-- <label for="companions">Кто придет с вами (ФИО сопровождающих)</label> -->
+                        <!-- <label for="companions">Кто придет с вами (ФИО сопровождающих)</label> -->
+    <textarea id="companions" name="companions" rows="1" placeholder="Имена всех, кто придет с вами"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Предпочтения по алкоголю</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol" value="шампанское"> шампанское / игристое вино
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol" value="белое вино"> белое вино
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol" value="красное вино"> красное вино
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol" value="водка"> водка
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol" value="коньяк"> коньяк
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol" value="виски"> виски
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="alcohol" value="джин"> джин
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <!-- <label for="allergy">Наличие аллергии</label> -->
+                    <textarea id="allergy" name="allergy" rows="1" placeholder="Если есть аллергия, укажите на что"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="fot.png" alt="Footer" class="footer-image">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
