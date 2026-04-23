@@ -866,6 +866,32 @@ body {
     }
 }
 
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Times New Roman', 'Georgia', serif;
+    font-size: 18px;
+    color: #6a633a;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.radio-label input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #6a633a;
+}
+
 /* Убираем синее выделение при нажатии на чекбоксы и их контейнеры */
 .checkbox-label,
 .checkbox-label:active,
@@ -936,4 +962,9 @@ div[role="button"]:focus,
 div[role="button"]:active {
     -webkit-tap-highlight-color: transparent;
     outline: none;
+}
+
+
+* {
+    -webkit-tap-highlight-color: transparent;
 }
