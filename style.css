@@ -322,7 +322,7 @@ body {
 }
 
 .timing-name {
-    font-family: 'Times New Roman', 'Georgia', serif;
+    font-family: 'Dancing Script', 'Pacifico', 'Segoe Script', 'Brush Script MT', cursive;
     font-size: 28px;
     font-weight: normal;
     color: #6a633a;
@@ -341,7 +341,7 @@ body {
 /* Адаптация для мобильных */
 @media (max-width: 768px) {
     .timing-title {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 40px;
     }
     
@@ -365,7 +365,7 @@ body {
 
 @media (max-width: 480px) {
     .timing-title {
-        font-size: 32px;
+        font-size: 42px;
         margin-bottom: 30px;
     }
     
@@ -403,7 +403,7 @@ body {
 
 .item-2 {
     position: relative !important;
-    top: -40px !important;
+    top: -75px !important;
     left: -70px !important;
 }
 
@@ -466,7 +466,7 @@ body {
 /* Адаптация для мобильных */
 @media (max-width: 768px) {
     .dress-code-title {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 25px;
     }
     
@@ -483,7 +483,7 @@ body {
 
 @media (max-width: 480px) {
     .dress-code-title {
-        font-size: 32px;
+        font-size: 42px;
         margin-bottom: 20px;
     }
     
@@ -599,7 +599,7 @@ body {
     }
     
     .details-title {
-        font-size: 38px;
+        font-size: 48px;
         margin-bottom: 30px;
     }
     
@@ -632,7 +632,7 @@ body {
     }
     
     .details-title {
-        font-size: 32px;
+        font-size: 42px;
         margin-bottom: 25px;
     }
     
@@ -798,7 +798,7 @@ body {
 
 @media (max-width: 480px) {
     .rsvp-title {
-        font-size: 38px;
+        font-size: 40px;
         margin-bottom: 30px;
     }
     
@@ -864,4 +864,76 @@ body {
     .footer {
         padding: 20px 15px;
     }
+}
+
+/* Убираем синее выделение при нажатии на чекбоксы и их контейнеры */
+.checkbox-label,
+.checkbox-label:active,
+.checkbox-label:focus,
+.checkbox-group label,
+.checkbox-group label:active,
+.checkbox-group label:focus {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    outline: none;
+}
+
+/* Убираем выделение у самих чекбоксов */
+input[type="checkbox"],
+input[type="checkbox"]:focus,
+input[type="checkbox"]:active {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+/* Для всех элементов формы */
+.form-group *,
+.form-group *:active,
+.form-group *:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+/* Убираем выделение пользователя при нажатии */
+.checkbox-label {
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Убираем синее выделение при нажатии на мобильных устройствах */
+button,
+button:focus,
+button:active,
+.submit-btn,
+.submit-btn:focus,
+.submit-btn:active,
+.rsvp-form button,
+.rsvp-form button:focus,
+.rsvp-form button:active,
+input,
+input:focus,
+input:active,
+textarea,
+textarea:focus,
+textarea:active,
+[type="button"],
+[type="button"]:focus,
+[type="button"]:active,
+[type="submit"],
+[type="submit"]:focus,
+[type="submit"]:active {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    outline: none;
+}
+
+/* Дополнительно для всех интерактивных элементов */
+a,
+a:focus,
+a:active,
+div[role="button"],
+div[role="button"]:focus,
+div[role="button"]:active {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 }
