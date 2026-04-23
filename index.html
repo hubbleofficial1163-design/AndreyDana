@@ -96,15 +96,28 @@
         <div class="rsvp-content">
             <h2 class="rsvp-title">Guest form</h2>
             <form class="rsvp-form" id="rsvpForm">
+
                 <div class="form-group">
-                    <!-- <label for="name">ФИО</label> -->
-                    <input type="text" id="name" name="name" required placeholder="Ваши имя и фамилия">
+                    <label for="name">Имя и фамилия</label>
+                    <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                </div>
+
+                <div class="form-group">
+                    <label>Сможете ли вы присутствовать?</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="yes" required> Да, буду
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="no"> Не смогу
+                        </label>
+                    </div>
                 </div>
                 
                 <div class="form-group">
-                    <!-- <label for="companions">Кто придет с вами (ФИО сопровождающих)</label> -->
+                    <label for="companions">Кто придет с вами</label>
                         <!-- <label for="companions">Кто придет с вами (ФИО сопровождающих)</label> -->
-    <textarea id="companions" name="companions" rows="1" placeholder="Имена всех, кто придет с вами"></textarea>
+    <textarea id="companions" name="companions" rows="1" placeholder="Мария Иванова"></textarea>
                 </div>
                 
                 <div class="form-group">
